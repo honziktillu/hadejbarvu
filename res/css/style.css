@@ -1,0 +1,73 @@
+* {
+    box-sizing: border-box;
+    font-family: 'Arvo', serif;
+    text-align: center;
+}
+
+html, body {
+    margin: 0;
+    padding: 0;
+    background-color: #292828;
+}
+
+header {
+    display: block;
+    background-color: blueviolet;
+    color: white;
+    padding: 1em;
+    padding-bottom: 0.1em;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 48px;
+}
+
+header p {
+    font-size: 24px;
+}
+
+nav {
+    display: block;
+    background-color: white;
+}
+
+nav button {
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+    font-size: 14px;
+    padding: 1em;
+    color: blueviolet;
+    letter-spacing: 0.04em;
+    outline: none;
+    transition: .2s background-color ease, .2s color ease;
+}
+
+nav button:hover {
+    background-color: blueviolet;
+    color: white;
+}
+
+.game-wrapper {
+    max-width: 300px;
+    width: 100%;
+    display: grid;
+    grid-template-columns: auto auto auto;
+    gap: 1em;
+    margin: 0 auto;
+    padding-top: 2em;
+}
+
+.color-div {
+    border: 5px solid transparent;
+    border-radius: 15px;
+    background-color: blue;
+    height: 100px;
+    cursor: pointer;
+    transition: .2s border ease, 1s opacity ease;
+}
+
+.color-div:hover {
+    border: 5px solid rgb(206, 206, 206);
+}
